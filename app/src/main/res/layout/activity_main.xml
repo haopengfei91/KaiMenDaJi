@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.faymax.kaimendaji.MainActivity">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <include layout="@layout/topbar" />
+
+            <include layout="@layout/juckbox" />
+
+            <include layout="@layout/wordpool" />
+
+        </LinearLayout>
+
+        <include layout="@layout/float_buttons" />
+
+        <include layout="@layout/answer_right" />
+
+    <FrameLayout
+        android:id="@+id/id_lay_preview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@mipmap/kaimendaji">
+
+        <TextView
+            android:id="@+id/id_tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:layout_gravity="right"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"/>
+    </FrameLayout>
+
+</RelativeLayout>
