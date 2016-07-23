@@ -277,7 +277,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick() {
                 if (mCurrentIndex == 0) {
-                    MainActivity.this.finish();
+                    finish();
                 } else {
                     backStage();
                 }
